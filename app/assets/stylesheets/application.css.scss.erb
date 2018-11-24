@@ -1,0 +1,96 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ // General
+
+* {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p { font-size: 16px; }
+ul { list-style: none; }
+<%# h1 { font-size: 3em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; } %>
+
+/* Flexbox */
+
+.flex { display: flex; }
+
+.row { flex-direction: row; }
+.col-row { flex-direction: row; }
+.row-r { flex-direction: row-reverse; }
+.col { flex-direction: column; }
+.col-r { flex-direction: column-reverse; }
+
+.j-start { justify-content: flex-start; }
+.j-end { justify-content: flex-end; }
+.j-center { justify-content: center; }
+.btw { justify-content: space-between; }
+.around { justify-content: space-around; }
+.even { justify-content: space-evenly; }
+
+.a-a { align-self: auto; }
+.a-start { align-self: flex-start; }
+.a-end { align-self: flex-end; }
+.a-center { align-self: center; }
+
+
+.center { align-items: center; }
+.base { align-items: baseline; }
+.stretch { align-items: stretch; }
+
+// Color
+
+.white { color: white; }
+.black { color: black; }
+
+.black-bg { background-color: black; }
+.red-bg { background-color: red; }
+.white-bg { background-color: white; }
+.blue-bg { background-color: blue; }
+.green-bg { background-color: green; }
+
+.quadrant,
+.identity {
+  width: 100%;
+  height: 20vh;
+  min-height: 150px;
+}
+
+.quadrant * {
+  font-size: 32px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+// Structure
+
+.block { display: block; }
+
+.fill {
+  height: 100%;
+  width: 100%;
+}
+
+.full-width { width: 100% }
+
+.text-center {
+  text-align:  center;
+}
